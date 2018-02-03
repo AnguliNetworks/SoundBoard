@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:fragment="head">
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Anguli Networks"/>
+    <meta name="description"
+          content="Share your ideas to inspire other or get help with your project."/>
+    <meta name="keywords"
+          content="anguli, anguli networks, idea, inspiration, project, project ideas"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+
+    <title th:include=":: title">test</title>
+</head>
+<body>
+<div>
+    <form method="POST" enctype="multipart/form-data" action="/sound/add">
+        <label for="owner">Owner</label>
+        <input type="text" name="owner" id="owner"/>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"/>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file"/>
+        <input type="submit"/>
+    </form>
+</div>
+
+</body>
+</html>

@@ -24,3 +24,5 @@ nbdist/
 .nb-gradle/
 
 .mvn
+/db-data/*
+/sounds/*
